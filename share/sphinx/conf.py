@@ -21,8 +21,7 @@ import sys
 import sphinx_bootstrap_theme
 
 
-sys.path.insert(0, '/Users/v_tatarnikov/PycharmProjects/4Gain/')
-sys.path.insert(1, '/Users/v_tatarnikov/PycharmProjects/4Gain/share/zabbix/')
+sys.path.insert(0, '/Users/v_tatarnikov/PycharmProjects/Sentry24/')
 
 
 # -- General configuration ------------------------------------------------
@@ -59,8 +58,8 @@ source_suffix = '.rst'
 master_doc = 'sphinx-index'
 
 # General information about the project.
-project = u'forGain'
-copyright = u'2016, forGain Group and Viktor Tatarnikov'
+project = u'Sentry24'
+copyright = u'2016, be to free'
 author = u'Viktor Tatarnikov'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -94,38 +93,37 @@ file_insertion_enabled = True
 
 rst_prolog = u"""
 .. meta::
-    :yandex-verification: d6958697bc49ef76
+    :yandex-verification: c9952a4ca0f646dd
 
 .. raw:: html
 
-    <!-- Yandex.Metrika counter -->
+   <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {
             (w[c] = w[c] || []).push(function() {
                 try {
-                    w.yaCounter41748524 = new Ya.Metrika({
-                        id:41748524,
+                    w.yaCounter41803019 = new Ya.Metrika({
+                        id:41803019,
                         clickmap:true,
                         trackLinks:true,
-                        accurateTrackBounce:true,
-                        webvisor:true
+                        accurateTrackBounce:true
                     });
                 } catch(e) { }
             });
-
+    
             var n = d.getElementsByTagName("script")[0],
                 s = d.createElement("script"),
                 f = function () { n.parentNode.insertBefore(s, n); };
             s.type = "text/javascript";
             s.async = true;
             s.src = "https://mc.yandex.ru/metrika/watch.js";
-
+    
             if (w.opera == "[object Opera]") {
                 d.addEventListener("DOMContentLoaded", f, false);
             } else { f(); }
         })(document, window, "yandex_metrika_callbacks");
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/41748524" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript><div><img src="https://mc.yandex.ru/watch/41803019" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
 """
@@ -151,7 +149,7 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 # theme further.
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': " forGain",
+    'navbar_title': " Sentry24",
 
     # Tab name for entire site. (Default: "Site")
     'navbar_site_name': u"Документация",
@@ -165,7 +163,6 @@ html_theme_options = {
     # an arbitrary url.
     'navbar_links': [
         ("GitHub", "https://github.com/MaxOnNet", True),
-        (u"Блог", "http://engine.4gain.pro", True),
     ],
 
     # Render the next and previous page links in navbar. (Default: true)
@@ -218,7 +215,7 @@ html_show_sphinx = True
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'forGainDoc'
+htmlhelp_basename = 'SentryDoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -298,7 +295,5 @@ napoleon_use_keyword = True
 
 autodoc_member_order = 'bysource'
 autodoc_mock_imports = [
-    'GUI.Windows',
-    'GUI.Widgets',
 
 ]
